@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import { Nav, Navbar } from "react-bootstrap";
+import logo from "../assets/img/logo.svg";
+import nav1 from "../assets/img/nav-icon1.svg";
+import nav2 from "../assets/img/nav-icon2.svg";
+import nav3 from "../assets/img/nav-icon3.svg";
 
 const Navigation = () => {
   const [activeLink, setActiveLink] = useState<string>("home");
@@ -20,7 +22,7 @@ const Navigation = () => {
     // add event listener on scroll
     window.addEventListener("scroll", onScroll);
     // remove if component removed from DOM
-    return () => window.removeEventListener("scroll", onscroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const onUpdateActiveLink = (value: string) => {
@@ -32,7 +34,7 @@ const Navigation = () => {
     <Navbar expand="lg" className={isScrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={""} alt="logo" />
+          <img src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon" />
@@ -76,13 +78,13 @@ const Navigation = () => {
           <span className="navbar-text">
             <div className="social-icon">
               <a href="#">
-                <img src={""} alt="" />
+                <img src={nav1} alt="" />
               </a>
               <a href="#">
-                <img src={""} alt="" />
+                <img src={nav2} alt="" />
               </a>
               <a href="#">
-                <img src={""} alt="" />
+                <img src={nav3} alt="" />
               </a>
             </div>
             <button className="vvd" onClick={() => console.log("connect")} />
