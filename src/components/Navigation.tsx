@@ -77,13 +77,13 @@ const Navigation = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/eugene-vodyannikov-b2395725b/" target="_blank">
                 <img src={nav1} alt="" />
               </a>
-              <a href="#">
+              <a href="https://vk.com/v_lucky_id" target="_blank">
                 <img src={nav2} alt="" />
               </a>
-              <a href="#">
+              <a href="https://github.com/evgenyvodyannikov" target="_blank">
                 <img src={nav3} alt="" />
               </a>
             </div>
