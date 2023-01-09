@@ -32,7 +32,7 @@ const Navigation = () => {
 
   return (
     <Navbar expand="lg" className={isScrolled ? "scrolled" : ""}>
-      <Container>
+      <Container style={{display: "flex"}}>
         <Navbar.Brand href="#home">
           <img src={logo} alt="logo" />
         </Navbar.Brand>

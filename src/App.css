@@ -98,9 +98,9 @@ nav.navbar a.navbar-brand {
   width: 9%;
 }
 
-nav.navbar a.navbar-brand img {
-  width: 15%;
-}
+.navbar-collapse{
+    display: flex;
+  }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -119,4 +119,9 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 span.navbar-text {
     display: flex;
     align-items: center;
+}
+
+.social-icon {
+    display: flex;
+    margin-left: 14px;
 }
