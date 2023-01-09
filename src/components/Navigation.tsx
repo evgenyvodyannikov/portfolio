@@ -11,7 +11,7 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   useEffect(() => {
-    const onScroll = () => {
+    const onScroll = (): void => {
       if (window.scrollY > 50) {
         setIsScrolled(true);
       } else {
@@ -25,7 +25,7 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const onUpdateActiveLink = (value: string) => {
+  const onUpdateActiveLink = (value: string): void => {
     console.log(value);
     setActiveLink(value);
   };
@@ -77,7 +77,10 @@ const Navigation = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/eugene-vodyannikov-b2395725b/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/eugene-vodyannikov-b2395725b/"
+                target="_blank"
+              >
                 <img src={nav1} alt="" />
               </a>
               <a href="https://vk.com/v_lucky_id" target="_blank">
