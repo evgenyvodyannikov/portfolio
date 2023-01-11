@@ -32,7 +32,7 @@ const Navigation = () => {
 
   return (
     <Navbar expand="lg" className={isScrolled ? "scrolled" : ""}>
-      <Container style={{display: "flex"}}>
+      <Container style={{ display: "flex" }}>
         <Navbar.Brand href="#home">
           <img src={logo} alt="logo" />
         </Navbar.Brand>
@@ -90,8 +90,7 @@ const Navigation = () => {
                 <img src={nav3} alt="" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")} />
-            <span>Let's Connect</span>
+            <button className="vvd" onClick={() => console.log("connect")}>Let's Connect</button>
           </span>
         </Navbar.Collapse>
       </Container>
